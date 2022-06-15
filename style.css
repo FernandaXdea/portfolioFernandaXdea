@@ -1,45 +1,47 @@
+
+
 /*====  RESET ============================ */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  ul {
-    list-style: none;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  img {
-    width: 100%;
-    height: auto;
-  }
-  
-  /*====  VARIABLES ============================ */
-  :root {
-    --header-height: 4.5rem;
-  
-    /* colors */
-    --hue: 159;
-    /* HSL color mode */
-    --base-color: hsl(var(--hue) 36% 57%);
-    --base-color-second: hsl(var(--hue) 65% 88%);
-    --base-color-alt: hsl(var(--hue) 57% 53%);
-    --title-color: hsl(var(--hue) 41% 10%);
-    --text-color: hsl(0 0% 46%);
-    --text-color-light: hsl(0 0% 98%);
-    --body-color: hsl(0 0% 98%);
-  
-    /* fonts */
-    --title-font-size: 1.875rem;
-    --subtitle-font-size: 1rem;
-  
-    --title-font: 'Poppins', sans-serif;
-    --body-font: 'DM Sans', sans-serif;
-  }
+  margin: 0; /*margem*/
+  padding: 0; /*preenchimento interno*/
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 80%; /* tamanho da imagem */
+  height: auto;
+}
+
+/*====  VARIABLES ============================ */
+:root {
+  --header-height: 4.5rem; /*o REM É UMA UNIDADE REATIVA(RESPONSIVO)PQ SE USAR PIXEl SEU TAMANHO É FIXO E NAO MUDA, QUANDO USA OUTRO DISPOSITIVO, divedo o vaor do pixe por16*/
+
+  /* cor principal*/
+  --hue: 15; /*AS VARIAVEIS SAÕ DEFINIDAS POR ESSES --*/
+  /* HSL color mode */
+  --base-color: 		#FF3265;
+  --base-color-second: hsl(var(--hue) 65% 88%);
+  --base-color-alt: hsl(var(--hue) 57% 53%);
+  --title-color: hsl(var(--hue) 41% 10%);
+  --text-color: hsl(0 0% 46%);
+  --text-color-light: hsl(0 0% 98%);
+  --body-color: hsl(0 0% 98%);
+
+  /* fontes */
+  --title-font-size: 1.875rem;
+  --subtitle-font-size: 1rem;
+
+  --title-font: 'Square Peg', cursive; /*PQ COlOCAMOS DOIS MODOS DE FONTE?PQ SE NÃO CARREGAR UMA, CARREGA A OUTRA*/
+  --body-font: Snell Roundhand, cursive;
+}
   
   /*===  BASE ============================ */
   html {
@@ -48,20 +50,24 @@
   
   body {
     font: 400 1rem var(--body-font);
-    color: var(--text-color);
+    color: 	#323232; /* cor dos textos */
     background: var(--body-color);
     -webkit-font-smoothing: antialiased;
+    background: #ff6e7f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #bfe9ff, #ff6e7f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #bfe9ff, #ff6e7f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
   }
   
   .title {
-    font: 700 var(--title-font-size) var(--title-font);
-    color: var(--title-color);
+    font: 900 var(--title-font-size) var(--title-font);
+    color: 	#FF3265; /* COR DO TITUlO  */
     -webkit-font-smoothing: auto;
   }
   
   .button {
-    background-color: var(--base-color);
-    color: var(--text-color-light);
+    background-color:	#FF3265; /* COR DO BOTAO */
+    color: var(--text-color-light); /* cor da fonte do botao*/
     height: 3.5rem;
     display: inline-flex;
     align-items: center;
@@ -157,7 +163,7 @@
   
   /*====  NAVIGATION ============================ */
   nav {
-    height: var(--header-height);
+    height: 6vh; /* argura nav*/
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -186,7 +192,7 @@
   
     position: absolute;
     left: 0;
-    bottom: -1.5rem;
+    bottom: -0.5rem; /* ATURA DO TRAÇO SUBINHADO */
   
     transition: width 0.2s;
   }
@@ -343,7 +349,7 @@
     margin-right: 1.5rem;
   }
   
-  /*====  SERVICES ============================ */
+  /*====  PROJECTS ============================ */
   .cards.grid {
     gap: 1.5rem;
   }
@@ -561,11 +567,13 @@
       opacity: 1;
       visibility: visible;
       top: 0;
+      
     }
   
     nav .menu ul {
       display: flex;
-      gap: 2rem;
+      gap: 2rem; /* DISTANCIA ENTRE AS PAlAVRAS*/
+      
     }
   
     nav .menu ul li a.title {
