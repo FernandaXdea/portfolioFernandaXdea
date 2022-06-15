@@ -1,0 +1,4 @@
+{
+    "debug.javascript.breakOnConditionalError": true,
+    "debug.javascript.debugByLinkOptions": "on"
+}
