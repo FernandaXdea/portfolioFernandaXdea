@@ -1,4 +1,14 @@
-
+.efeito-awn-isa {
+  
+  padding: 2px;
+  border: 1px solid #COR DA BORDA;
+  -webkit-transition-duration: 2s
+  }
+  .efeito-awn-isa:hover {
+  -webkit-transform: rotate(90deg) rotate(180deg);
+  -webkit-transition-duration: 2.5s
+  }
+  
 
 /*====  RESET ============================ */
 * {
@@ -15,10 +25,7 @@ a {
   text-decoration: none;
 }
 
-img {
-  width: 80%; /* tamanho da imagem */
-  height: auto;
-}
+
 
 /*====  VARIABLES ============================ */
 :root {
@@ -54,8 +61,8 @@ img {
     background: var(--body-color);
     -webkit-font-smoothing: antialiased;
     background: #ff6e7f;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #bfe9ff, #ff6e7f);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #bfe9ff, #ff6e7f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #ff6e7f, #FF99E5, #FFCCD8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff6e7f, #FF99E5, #FFCCD8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
   }
   
@@ -262,7 +269,10 @@ img {
     opacity: 1;
     top: 1.5rem;
   }
-  
+  /*img {
+  width: 80%; /* tamanho da imagem 
+  height: auto;
+}*/
   /*====  HOME ============================ */
   #home {
     overflow: hidden;
