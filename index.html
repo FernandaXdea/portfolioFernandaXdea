@@ -17,6 +17,35 @@
   
       <!-- STYLES -->
       <link rel="stylesheet" href="style.css" />
+
+      <script src="http://static.tumblr.com/rozpbz7/nFim53lu5/jquery.js"></script>
+<script src="http://static.tumblr.com/rozpbz7/tcom53lvc/easing.js"></script>
+<script type='text/javascript'>
+$(document).ready(function() {
+        $('.box_containere').hover(function(){
+                        var width = $(this).outerWidth() / 2;
+                        $(this).find('.left').animate({ right : width },{queue:false,duration:300});
+            $(this).find('.right').animate({ left : width },{queue:false,duration:300});
+        }, function(){
+            $(this).find('.left').animate({ right : 0 },{queue:false,duration:300});
+            $(this).find('.right').animate({ left : 0 },{queue:false,duration:300});
+        });
+        
+        $('.box_container3').hover(function(){
+            
+            var width = $(this).outerWidth() / 2;
+            
+            $(this).find('.left3').animate({ right : width },{easing: 'easeOutBounce', queue:false,duration:800});
+            $(this).find('.right3').animate({ left : width },{easing: 'easeOutBounce', queue:false,duration:800});
+        }, function(){
+            
+            $(this).find('.left3').animate({ right : 0 },{easing: 'easeOutBounce',queue:false,duration:800});
+            $(this).find('.right3').animate({ left : 0 },{easing: 'easeOutBounce',queue:false,duration:800});
+            
+        });
+             
+  });
+</script>
   
 </head>
  <!-- Fonts O lINK DA FONTE FOI PEGO NO GOOGE FONTS -->
@@ -53,14 +82,14 @@
        
           <!-- IMAGENS GRATIS NO SITE UNSPlASH, até a descrição da imagem pra pessoas com assecibiidade
            -->
-           <div> <a href="https://github.com/FernandaXdea" title="NOME"><img class="efeito-awn-isa" height="100" width="100" src="https://img.icons8.com/bubbles/344/github.png" /></a>
-            <a href="https://www.linkedin.com/in/fernandaxdea/" title="NOME"><img class="efeito-awn-isa" height="100" width="100"  src="https://img.icons8.com/bubbles/344/linkedin.png" /></a>
-            <a href="https://discord.com/channels/@fernandaxdea#7472" title="NOME"><img class="efeito-awn-isa" height="100" width="100"  src="https://img.icons8.com/bubbles/344/discord-logo.png" /></a>
-            <a href="mailto:nandaxdea@gmail.com" title="NOME"><img class="efeito-awn-isa" height="100" width="100" src="https://img.icons8.com/bubbles/344/gmail.png" /></a>
-            <br>  <a href="https://www.instagram.com/fernanda._.xdea/" title="NOME"><img class="efeito-awn-isa" height="100" width="100" src="https://img.icons8.com/bubbles/344/instagram.png" /></a>
-            <a href="https://www.behance.net/fernandaxdeabsb" title="NOME"><img class="efeito-awn-isa" height="100" width="100" src="https://img.icons8.com/bubbles/344/behance.png" /></a>
-            <a href="https://www.youtube.com/channel/UCSSVGgs9B08G-MXRY1RPLyQ" title="NOME"><img class="efeito-awn-isa" height="100" width="100" src="https://img.icons8.com/bubbles/344/youtube.png" /></a>
-            <a href=" https://drive.google.com/drive/folders/1MjvHDvz8AqrpTECcF-12CSlzg6rqr_Qm" title="NOME"><img class="efeito-awn-isa" height="100" width="100" src="https://img.icons8.com/bubbles/344/broken-computer.png" /></a>
+           <div> <a href="https://github.com/FernandaXdea" ><img class="efeito-awn-isa" height="100" width="100" src="https://img.icons8.com/bubbles/344/github.png" /></a>
+            <a href="https://www.linkedin.com/in/fernandaxdea/" ><img class="efeito-awn-isa" height="100" width="100"  src="https://img.icons8.com/bubbles/344/linkedin.png" /></a>
+            <a href="https://discord.com/channels/@fernandaxdea#7472" ><img class="efeito-awn-isa" height="100" width="100"  src="https://img.icons8.com/bubbles/344/discord-logo.png" /></a>
+            <a href="mailto:nandaxdea@gmail.com" ><img class="efeito-awn-isa" height="100" width="100" src="https://img.icons8.com/bubbles/344/gmail.png" /></a>
+            <br>  <a href="https://www.instagram.com/fernanda._.xdea/" ><img class="efeito-awn-isa" height="100" width="100" src="https://img.icons8.com/bubbles/344/instagram.png" /></a>
+            <a href="https://www.behance.net/fernandaxdeabsb" ><img class="efeito-awn-isa" height="100" width="100" src="https://img.icons8.com/bubbles/344/behance.png" /></a>
+            <a href="https://www.youtube.com/channel/UCSSVGgs9B08G-MXRY1RPLyQ" ><img class="efeito-awn-isa" height="100" width="100" src="https://img.icons8.com/bubbles/344/youtube.png" /></a>
+            <a href=" https://drive.google.com/drive/folders/1MjvHDvz8AqrpTECcF-12CSlzg6rqr_Qm"><img class="efeito-awn-isa" height="100" width="100" src="https://img.icons8.com/bubbles/344/broken-computer.png" /></a>
           </div>
        
        
@@ -108,7 +137,7 @@
 
    <!-- PROJECT -->
    <section class="section" id="project">
-  
+   
      <div class="container grid">
        <header>
          <h2 class="title">Projetos</h2>
@@ -117,35 +146,58 @@
            conquistou clientes de inúmeros países com seus tratamentos
            exclusivos e totalmente naturais
          </p>
-       </header>
-       <div class="cards grid">
-         <div class="card">
-           <i class="icon-woman-hair"></i>
-           <h3 class="title">Terapia capilar</h3>
-           <p>
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-             distinctio neque blanditiis, dolorem aperiam nulla explicabo
-             asperiores
-           </p>
-         </div>
-         <div class="card">
-           <i class="icon-trim"></i>
-           <h3 class="title">Cortes</h3>
-           <p>
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-             distinctio neque blanditiis, dolorem aperiam nulla explicabo
-             asperiores
-           </p>
-         </div>
-         <div class="card">
-           <i class="icon-cosmetic"></i>
-           <h3 class="title">Tratamentos</h3>
-           <p>
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-             distinctio neque blanditiis, dolorem aperiam nulla explicabo
-             asperiores
-           </p>
-         </div>
+         
+     </header>
+</div>
+<div class='box_container3'>
+  <a href="LINK">
+  <div class='images_holder3'>
+  <div class='image_div3 left3'><img height="200" width="200" src='https://i.pinimg.com/originals/0d/9b/07/0d9b07c6152668aaaa10b5514668156c.gif'/></div> <!-- esquerdo --> 
+  <div class='image_div3 right3'><img height="200" width="200"  src='https://i.pinimg.com/originals/0d/9b/07/0d9b07c6152668aaaa10b5514668156c.gif'/></div> <!-- direito --> 
+  </div><div style="clear:both"></div>
+  <br><br>Em breve Em breve Em breve </a>
+  </div>
+  <div class='box_container3'>
+    <a href="LINK">
+    <div class='images_holder3'>
+    <div class='image_div3 left3'><img height="200" width="200" src='https://i.pinimg.com/originals/0d/9b/07/0d9b07c6152668aaaa10b5514668156c.gif'/></div> <!-- esquerdo --> 
+    <div class='image_div3 right3'><img height="200" width="200"  src='https://i.pinimg.com/originals/0d/9b/07/0d9b07c6152668aaaa10b5514668156c.gif'/></div> <!-- direito --> 
+    </div><div style="clear:both"></div>
+    <br><br>Em breve Em breve Em breve </a>
+    </div>
+    <div class='box_container3'>
+      <a href="LINK">
+      <div class='images_holder3'>
+      <div class='image_div3 left3'><img height="200" width="200" src='https://i.pinimg.com/originals/0d/9b/07/0d9b07c6152668aaaa10b5514668156c.gif'/></div> <!-- esquerdo --> 
+      <div class='image_div3 right3'><img height="200" width="200"  src='https://i.pinimg.com/originals/0d/9b/07/0d9b07c6152668aaaa10b5514668156c.gif'/></div> <!-- direito --> 
+      </div><div style="clear:both"></div>
+      <br><br>Em breve Em breve Em breve </a>
+      </div>
+     <div class='box_container3'>
+      <a href="LINK">
+      <div class='images_holder3'>
+      <div class='image_div3 left3'><img height="200" width="200" src='https://i.pinimg.com/originals/0d/9b/07/0d9b07c6152668aaaa10b5514668156c.gif'/></div> <!-- esquerdo --> 
+      <div class='image_div3 right3'><img height="200" width="200"  src='https://i.pinimg.com/originals/0d/9b/07/0d9b07c6152668aaaa10b5514668156c.gif'/></div> <!-- direito --> 
+      </div><div style="clear:both"></div>
+      <br><br>Em breve Em breve Em breve </a>
+      </div>
+      <div class='box_container3'>
+        <a href="LINK">
+        <div class='images_holder3'>
+        <div class='image_div3 left3'><img height="200" width="200" src='https://i.pinimg.com/originals/0d/9b/07/0d9b07c6152668aaaa10b5514668156c.gif'/></div> <!-- esquerdo --> 
+        <div class='image_div3 right3'><img height="200" width="200"  src='https://i.pinimg.com/originals/0d/9b/07/0d9b07c6152668aaaa10b5514668156c.gif'/></div> <!-- direito --> 
+        </div><div style="clear:both"></div>
+        <br><br>Em breve Em breve Em breve </a>
+        </div>
+        <div class='box_container3'>
+          <a href="LINK">
+          <div class='images_holder3'>
+          <div class='image_div3 left3'><img height="200" width="200" src='https://i.pinimg.com/originals/0d/9b/07/0d9b07c6152668aaaa10b5514668156c.gif'/></div> <!-- esquerdo --> 
+          <div class='image_div3 right3'><img height="200" width="200"  src='https://i.pinimg.com/originals/0d/9b/07/0d9b07c6152668aaaa10b5514668156c.gif'/></div> <!-- direito --> 
+          </div><div style="clear:both"></div>
+          <br><br>Em breve Em breve Em breve </a>
+          </div>
+       
        </div>
      </div>
    </section>

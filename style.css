@@ -1,3 +1,7 @@
+.box_container3{position:relative;width:200px;height:200px;overflow:hidden;   background: url(https://i.pinimg.com/originals/0d/9b/07/0d9b07c6152668aaaa10b5514668156c.gif) no-repeat;color:white;font-family:'pixel';font-size:12px;text-transform:uppercase;text-align:center;display:inline-block;border:2px solid #851e2f;}
+.box_container3 a{color:#fff;}
+.images_holder3{position:absolute;}
+.image_div3 {position:relative;overflow:hidden;width:50%;float:left;}    .right3 img{margin-left: -100%;z-index:50px;}
 .efeito-awn-isa {
   
   padding: 2px;
